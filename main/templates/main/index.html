@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TestTtext</title>
+</head>
+<body>
+    <h1 align="center">Поиск по номеру телефона</h1>
+    <br>
+    <br>
+    <p align="center">Номер; Часть номера; Имя; Фамилия; Имя и фамилия</p>
+    <br>
+<form align="center" action="{% url 'search_results' %}" method="get">
+        <input type="text" name="q" placeholder="Найти...">
+        <input type="submit" value="Поиск">
+    </form>
+</body>
+</html>
